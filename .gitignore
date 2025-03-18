@@ -1,0 +1,55 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.sqlite3
+*.env
+
+# Django
+*.log
+db.sqlite3
+media/
+staticfiles/
+*.pot
+*.py[co]
+
+# Virtual Environment
+venv/
+env/
+*.egg-info/
+*.egg
+*.whl
+
+# IDE/Editor
+.vscode/
+.idea/
+*.iml
+
+# Migrations
+*/migrations/*  
+!*/migrations/__init__.py
+
+# Docker
+*.log
+docker-compose.override.yml
+
+# Node (if you have frontend files)
+node_modules/
+
+# Environment Variables
+.env
+.env.*
+*.secret
+
+# Coverage Reports
+htmlcov/
+.coverage
+*.cover
+.cache
+nosetests.xml
+coverage.xml
+*.coveragerc
+
+# Pytest
+.pytest_cache/

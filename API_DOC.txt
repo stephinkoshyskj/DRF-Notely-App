@@ -1,0 +1,48 @@
+schema : User
+
+fields : username, email, password
+
+======================API for creating User===========================
+
+url : http:127.0.0.1:8000/api/register/
+method : post
+
+body : {
+    "username":"username",
+    "email":"useremail",
+    "password1":"password",
+    "password2":confirm password,
+    "phone":"phone"
+}
+
+
+
+schema : Task
+
+fields : title, description, status, created date, owner, category, priority, is_active
+
+======================API for adding task===========================
+
+url : http:127.0.0.1:8000/api/tasks/
+method : post
+
+body : {
+    "title":"title",
+    "description":"description",
+    "status":"status",
+    "category":"category",
+    "priority":"priority"
+}
+
+authorization : basic
+
+======================API for listing tasks===========================
+
+url : http:127.0.0.1:8000/api/tasks/
+method : get
+authorization : basic
+
+
+======================API for task summary===========================
+
+
